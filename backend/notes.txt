@@ -1,0 +1,8 @@
+
+o = {
+    m: function(){}
+}
+
+o.m()     // Regular property access, regular invocation
+o?.m()    // Conditional property access, regular invocation
+o.m?.()   // Regular property access, conditional invocation
