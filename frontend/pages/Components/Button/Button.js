@@ -1,15 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
-import "./button.css";
+import styles from "./button.module.css";
 
 function Button(props) {
     let type = props.type;
     if (!type) {
-        type = "default";
+        type = styles.default;
     }
     return (
-        <Link to={props.path}>
+        <Link href={props.path}>
             <div className={type}>
                 {props.text}
             </div>

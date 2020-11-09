@@ -1,11 +1,11 @@
 import React from 'react';
 import Button from '../Button/Button';
 
-import './menu.css';
+import styles from './Menu.module.css';
 
 function Menu (){
     return(
-    <div id="menu-layer">
+    <div className= {styles.menuLayer}>
         <Button text="Home" path="/home" />
         <Button text="Bo" path="/bo" />
         <Button text="Contact" path="#contact" />
